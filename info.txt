@@ -1,0 +1,2 @@
+Commands:
+g++ -std=c++17 src/*.cpp -Iinclude -o trading_simulator

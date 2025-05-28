@@ -6,7 +6,6 @@
 #include <deque>
 #include <unordered_map>
 #include <iostream>
-using namespace std;
 
 class OrderBook {
 public:
@@ -14,10 +13,9 @@ public:
     void print_book() const;
 
 private:
-    map<double, deque<Order>, greater<double>> bids;
-    map<double, deque<Order>> asks;
-
-    unordered_map<uint64_t, pair<Side, deque<Order>::iterator>> order_map;
+    std::map<double, std::deque<Order>, std::greater<double>> bids;
+    std::map<double, std::deque<Order>> asks;
+    std::unordered_map<uint64_t, std::pair<Side, std::deque<Order>::iterator>> order_map;
 };
 
 #endif

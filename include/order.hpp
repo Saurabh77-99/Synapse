@@ -1,8 +1,7 @@
-#ifndef ORDER_HPP
-#define ORDER_HPP
+#pragma once
 
-#include<chrono>
-#include<cstdint>
+#include <chrono>
+#include <cstdint>
 using namespace std;
 
 enum class Side { BUY, SELL };
@@ -18,5 +17,3 @@ struct Order {
 
     Order(uint64_t id, Side s, OrderType t, double p, uint64_t q);
 };
-
-#endif 
